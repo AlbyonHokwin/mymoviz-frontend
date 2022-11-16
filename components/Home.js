@@ -12,7 +12,7 @@ function Home() {
 
   // Fetch movies from backend
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend-three.vercel.app/movies')
       .then(response => response.json())
       .then(data => setMoviesData(data.movies));
   }, []);
